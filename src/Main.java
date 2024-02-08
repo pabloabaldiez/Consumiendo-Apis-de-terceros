@@ -17,7 +17,7 @@ try {
 
     if(responseCode != 200){
 
-        throw new RuntimeException("Ocurrio un error de tipo: " + responseCode)
+        throw new RuntimeException("Ocurrio un error de tipo: " + responseCode);
     } else {
 
         StringBuilder informationString = new StringBuilder();
@@ -29,6 +29,8 @@ try {
         }
 
         scanner.close();
+
+        System.out.println(informationString);
     }
 
 
