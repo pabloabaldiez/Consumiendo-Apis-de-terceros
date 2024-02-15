@@ -27,7 +27,6 @@ try {
         }
 
         scanner.close();
-
         System.out.println(informationString);
     }
 
