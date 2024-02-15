@@ -16,12 +16,10 @@ try {
     int responseCode= con.getResponseCode();
 
     if(responseCode != 200){
-
         throw new RuntimeException("Ocurrio un error de tipo: " + responseCode);
     } else {
 
         StringBuilder informationString = new StringBuilder();
-
         Scanner scanner= new Scanner(url.openStream());
 
         while (scanner.hasNext()){
